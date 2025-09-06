@@ -6,7 +6,7 @@
 /*   By: jpluta <jpluta@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 12:38:48 by jpluta            #+#    #+#             */
-/*   Updated: 2025/09/06 17:37:01 by jpluta           ###   ########.fr       */
+/*   Updated: 2025/09/06 18:38:14 by jpluta           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include "libft/libft.h"
+#include "libft/get_next_line/get_next_line.h"
 
 typedef struct	s_data
 {
@@ -74,4 +75,4 @@ int		is_file_name_valid(char *file_name);
 int		check_and_process_file(char *file, t_data *data);
 void	process_line(char *line, t_data *data);
 void	extract_data(char *line, t_data *data, int *i);
-char	*assign_value(char *line, int *i);
+char	*skip_empty_spaces(char *line, int *i);

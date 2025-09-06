@@ -4,6 +4,7 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror 
 SRC = \
 main.c \
+parsing/parse_file_data.c \
 
 OBJ = $(SRC:.c=.o)
 
